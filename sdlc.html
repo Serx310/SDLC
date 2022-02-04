@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Development Life Cycle</title>
+    <style>
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    } 
+    </style>
+</head>
+<body>
+    <h1>SDLC</h1>
+    <p>SDLC is a process used by the software industry to design, develop and test high quality softwares. The SDLC aims to produce a high-quality software that meets or exceeds customer expectations, reaches completion within times and cost estimates.</p>
+
+
+    <button class="accordion">Planning and Requirement Analysis</button>
+    <div class="panel">
+      <p>Requirement analysis is the most important and fundamental stage in SDLC. This information is then used to plan the basic project approach and to conduct product feasibility study in the economical, operational and technical areas.</p>
+    </div>
+    
+    <button class="accordion">Defining Requirements</button>
+    <div class="panel">
+      <p>clearly define and document the product requirements and get them approved from the customer or the market analysts. This is done through an SRS document which consists of all the product requirements to be designed and developed during the project life cycle.</p>
+    </div>
+    
+    <button class="accordion">Designing the Product Architecture</button>
+    <div class="panel">
+      <p>SRS is the reference for product architects to come out with the best architecture for the product to be developed. Based on the requirements specified in SRS, usually more than one design approach for the product architecture is proposed and documented. A design approach clearly defines all the architectural modules of the product along with its communication and data flow representation with the external and third party modules</p>
+    </div>
+
+    <button class="accordion">Building or Developing the Product</button>
+    <div class="panel">
+      <p>The programming code is generated as per documentation during this stage. If the design is performed in a detailed and organized manner, code generation can be accomplished without much hassle.</p>
+    </div>
+    
+    <button class="accordion">Testing the Product</button>
+    <div class="panel">
+      <p>This stage refers to the testing only stage of the product where product defects are reported, tracked, fixed and retested, until the product reaches the quality standards defined in the SRS.</p>
+    </div>
+
+    <button class="accordion">Deployment in the Market and Maintenance</button>
+    <div class="panel">
+      <p>Once the product is tested and ready to be deployed it is released formally in the appropriate market. Then based on the feedback, the product may be released as it is or with suggested enhancements in the targeting market segment. After the product is released in the market, its maintenance is done for the existing customer base.</p>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+        });
+    }
+    </script>
+</body>
+</html>
