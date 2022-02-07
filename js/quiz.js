@@ -35,7 +35,70 @@ const translatables = [
             c: "România",
             d: "Elveţia"
         },
-        correct: "d"
+        correct: "d",
+
+        english: "to love",
+        romanian: {
+            a: "a fi",
+            b: "a iubi",
+            c: "a vâna",
+            d: "a trăi"
+        },
+        correct: "b",
+
+        english: "pain",
+        romanian: {
+            a: "ţară",
+            b: "viaţă",
+            c: "durere",
+            d: "iubire"
+        },
+        correct: "c",
+
+        english: "Good night",
+        romanian: {
+            a: "Noapte bună",
+            b: "Bună ziua",
+            c: "Bună dimineaţă",
+            d: "Bună seara"
+        },
+        correct: "a",
+
+        english: "to speak",
+        romanian: {
+            a: "a dormi",
+            b: "a citi",
+            c: "a vorbi",
+            d: "a sosi"
+        },
+        correct: "c",
+
+        english: "He does not speak Romanian, but he speaks Portuguese",
+        romanian: {
+            a: "Nu vorbeşte română, dar vorbeşte portugheză",
+            b: "Nu citeşte în română",
+            c: "Nu locuieşte în Ungria",
+            d: "Nu ştie română"
+        },
+        correct: "a",
+
+        english: "I like it",
+        romanian: {
+            a: "Îmi place",
+            b: "Te iubesc",
+            c: "O iubesc",
+            d: "Îl iubesc"
+        },
+        correct: "a",
+
+        english: "I do not understand",
+        romanian: {
+            a: "Nu ştiu",
+            b: "Nu înţeleg",
+            c: "Nu citesc",
+            d: "Nu văd"
+        },
+        correct: "b",
     }
 ]
 
