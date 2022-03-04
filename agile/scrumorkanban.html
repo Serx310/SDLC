@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrum or Kanban?</title>
+    <style>
+        /* Style the buttons that are used to open and close the accordion panel */
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+    
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+    
+        /* Style the accordion panel. Note: hidden by default */
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+        } 
+        </style>
+</head>
+<body>
+
+    <h1>Scrum or Kanban?</h1>
+
+    <h2>Scrum - pros and cons</h2>
+    <button class="accordion">Pros</button>
+    <div class="panel">
+      <ul>
+          <li>Scrum can help teams complete project deliverables quickly and efficiently</li>
+          <li>Large projects are divided into easily manageable sprints</li>
+          <li>Works well for fast-moving development projects</li>
+          <li>Short sprints enable changes based on feedback a lot more easily</li>
+          <li>The individual effort of each team member is visible during daily scrum meetings</li>
+      </ul>
+    </div>
+    
+    <button class="accordion">Cons</button>
+    <div class="panel">
+        <ul>
+            <li>Scrum often leads to scope creep, due to the lack of a definite end-date</li>
+            <li>The chances of project failure are high if individuals aren't very committed or cooperative</li>
+            <li>Adopting the Scrum framework in large teams is challenging</li>
+            <li>Daily meetings sometimes frustrate team members</li>
+            <li>Quality is hard to implement until the team goes through an aggressive testing process</li>
+        </ul>
+    </div>
+
+    <h2>Kanban - Pros and Cons</h2>
+    
+    <button class="accordion">See pros</button>
+    <div class="panel">
+        <ul>
+            <li>Kanban is a very simple and easy to understand approach, which makes it practical for the management of a company to apply effectively.</li>
+            <li>Promotes continuous and sustainable improvements in the various functions of the company</li>
+            <li>Kanban encourages maximal adaptability, which is incredible for more extensive ventures that require ongoing changes.</li>
+            <li>Kanban advances collaboration and makes the whole team work together to convey the ideal outcomes.</li>
+            <li>Supervision of the use of a Kanban board, cards, and analysis of output is easier as compared to most methods/approaches to project management.</li>
+        </ul>
+    </div>
+
+    <button class="accordion">See cons</button>
+    <div class="panel">
+        <ul>
+            <li>Cannot be used independently</li>
+            <li>Does not fit into a dynamic environment</li>
+            <li>Building software in iterations is a foundation for most development processes, which is not integral to Kanban at a ticket level. You can build iteration on top of Kanban, but it often ends up being its own separate process.</li>
+            <li>There are no timeframes associated with each phase, which can be disadvantageous.</li>
+        </ul>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+        });
+    }
+    </script>
+    
+</body>
+</html>

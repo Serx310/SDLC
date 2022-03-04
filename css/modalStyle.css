@@ -23,22 +23,33 @@
   }
   
   /* The Close Button */
-  .close {
+  .close1, .close2, .close3, .close4, .close5, .close6, .close7, .close8, .close9, .close10, .close11, .close12 {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+  .close1:hover,
+  .close1:focus, .close2:hover,
+  .close2:focus, .close3:hover,
+  .close3:focus, .close4:hover,
+  .close4:focus, .close5:hover,
+  .close5:focus, .close6:hover,
+  .close6:focus, .close7:hover,
+  .close7:focus, .close8:hover,
+  .close8:focus, .close9:hover,
+  .close9:focus, .close10:hover,
+  .close10:focus, .close11:hover,
+  .close11:focus, .close12:hover,
+  .close12:focus{
     color: #000;
     text-decoration: none;
     cursor: pointer;
   }
   /* The Modal (background) */
 
-  .modal1, .modal2, .modal3, .modal4, .modal5, .modal6 {
+  .modal1, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8, .modal9, .modal10, .modal11, .modal12 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
